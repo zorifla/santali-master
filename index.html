@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Santali Master</title>
+    <meta name="description" content="Privacy Policy for Santali Master Android application by Zorif. Learn how we respect student privacy, use local storage, Google AdMob, and Meta Audience Network mediation.">
+    <link rel="canonical" href="https://zorifla.github.io/santali-master/">
+    <style>
+        :root {
+            --primary: #166534;
+            --primary-dark: #0F4422;
+            --primary-light: #DCFCE7;
+            --accent: #EA580C;
+            --text-main: #1E293B;
+            --text-secondary: #475569;
+            --bg-page: #F8FAF9;
+            --bg-card: #FFFFFF;
+            --border-color: #E2E8F0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            color: var(--text-main);
+            background-color: var(--bg-page);
+            padding: 0; margin: 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .header-content { max-width: 800px; margin: 0 auto; }
+        .app-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+        h1 { font-size: 32px; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.5px; }
+        .subtitle { font-size: 16px; opacity: 0.9; margin-bottom: 12px; }
+        .effective-date { font-size: 13px; opacity: 0.8; }
+        .header-btn {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.25);
+            color: #FFFFFF !important;
+            border: 1.5px solid rgba(255, 255, 255, 0.7);
+            padding: 8px 20px;
+            border-radius: 24px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-top: 14px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .header-btn:hover {
+            background: rgba(255, 255, 255, 0.45);
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+        .container { max-width: 840px; margin: 30px auto; padding: 0 20px 60px; }
+        .quick-nav {
+            background: #FFFFFF;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 14px 18px;
+            margin-bottom: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        }
+        .quick-nav-title {
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-right: 4px;
+        }
+        .quick-nav a {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            padding: 5px 12px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .quick-nav a:hover {
+            background: #BBF7D0;
+        }
+        .quick-nav a.contact-pill {
+            background: #FFF3E0;
+            color: var(--accent);
+            border: 1px solid #FFE0B2;
+            font-weight: 700;
+        }
+        .quick-nav a.contact-pill:hover {
+            background: #FFE0B2;
+        }
+        .summary-card {
+            background: var(--bg-card);
+            border-left: 5px solid var(--primary);
+            border-radius: 8px;
+            padding: 22px 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .summary-card h3 {
+            color: var(--primary);
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-top: 14px;
+        }
+        .summary-item {
+            background: var(--primary-light);
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            color: var(--primary-dark);
+            font-weight: 500;
+        }
+        .contact-cta {
+            margin-top: 18px;
+            padding-top: 14px;
+            border-top: 1px dashed #BBF7D0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 14px;
+        }
+        .contact-cta a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--primary);
+            color: #FFFFFF !important;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 13px;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .contact-cta a:hover {
+            background: var(--primary-dark);
+            text-decoration: none;
+        }
+        .card {
+            background: var(--bg-card);
+            border-radius: 10px;
+            padding: 26px 30px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+            scroll-margin-top: 24px;
+            transition: all 0.3s ease;
+        }
+        :target {
+            outline: 2px solid var(--accent);
+            box-shadow: 0 0 16px rgba(234, 88, 12, 0.25);
+        }
+        h2 {
+            font-size: 20px;
+            color: var(--primary-dark);
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary-light);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        h3 {
+            font-size: 16px;
+            color: var(--primary-dark);
+            margin: 18px 0 8px 0;
+        }
+        p { margin-bottom: 14px; color: var(--text-secondary); font-size: 15px; }
+        ul { margin-left: 24px; margin-bottom: 16px; color: var(--text-secondary); font-size: 15px; }
+        li { margin-bottom: 8px; }
+        strong { color: var(--text-main); }
+        code {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-family: monospace;
+        }
+        a { color: var(--primary); text-decoration: none; font-weight: 600; }
+        a:hover { text-decoration: underline; }
+        .table-responsive { overflow-x: auto; margin: 16px 0; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        th, td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border-color); }
+        th { background-color: var(--primary-light); color: var(--primary-dark); font-weight: 600; }
+        .badge-none { background: #DCFCE7; color: #166534; padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; }
+        .badge-ad { background: #FFF3E0; color: #EA580C; padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; }
+        .callout {
+            background-color: #F1F5F9;
+            border-left: 4px solid var(--primary);
+            padding: 14px 16px;
+            border-radius: 6px;
+            margin: 16px 0;
+            font-size: 14px;
+            color: var(--text-main);
+        }
+        .contact-box {
+            background: var(--primary-light);
+            border: 1.5px solid #BBF7D0;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 14px;
+            text-align: center;
+        }
+        .contact-box p {
+            color: var(--primary-dark);
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .contact-details-list {
+            margin: 14px auto;
+            max-width: 440px;
+            text-align: left;
+            background: #FFFFFF;
+            padding: 12px 18px;
+            border-radius: 8px;
+            border: 1px solid #BBF7D0;
+            font-size: 14px;
+        }
+        .contact-details-list div {
+            margin-bottom: 6px;
+            color: var(--text-main);
+        }
+        .contact-details-list strong {
+            color: var(--primary);
+        }
+        .contact-email-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary);
+            color: #FFFFFF !important;
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 15px;
+            text-decoration: none !important;
+            box-shadow: 0 3px 8px rgba(22, 101, 52, 0.25);
+            transition: all 0.2s ease;
+        }
+        .contact-email-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+        .contact-highlight {
+            outline: 2px solid var(--primary) !important;
+            box-shadow: 0 0 16px rgba(22, 101, 52, 0.3) !important;
+            animation: pulseFade 1.8s ease-in-out;
+        }
+        @keyframes pulseFade {
+            0% { transform: scale(1.01); }
+            50% { transform: scale(1); }
+            100% { transform: scale(1); }
+        }
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #777777;
+            font-size: 13px;
+            border-top: 1px solid var(--border-color);
+            background: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <header id="top">
+        <div class="header-content">
+            <div class="app-badge">Official App Policy</div>
+            <h1>Privacy Policy</h1>
+            <div class="subtitle">Santali Master — JSSC &amp; JPSC Exam Preparation</div>
+            <div class="effective-date">Last Updated &amp; Effective Date: October 12, 2026</div>
+            <div>
+                <a href="#contact" class="header-btn">📬 Contact Us &darr;</a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <nav class="quick-nav">
+            <span class="quick-nav-title">Quick Navigation:</span>
+            <a href="#summary">Summary</a>
+            <a href="#no-pii">No PII</a>
+            <a href="#local-storage">Local Storage</a>
+            <a href="#admob">AdMob &amp; Meta Mediation</a>
+            <a href="#in-app-updates">In-App Updates</a>
+            <a href="#permissions">Permissions</a>
+            <a href="#user-control">User Rights</a>
+            <a href="#contact" class="contact-pill">📬 Contact Us</a>
+        </nav>
+        <div class="summary-card" id="summary">
+            <h3>🛡️ Privacy at a Glance</h3>
+            <p>We believe in total transparency. <strong>Santali Master</strong> is an offline-first educational app designed to help candidates prepare for and succeed in Jharkhand competitive examinations.</p>
+            <div class="summary-grid">
+                <div class="summary-item">🚫 No account or login required</div>
+                <div class="summary-item">🔒 No personal data collected (No name, email, or phone)</div>
+                <div class="summary-item">📱 Study data stored 100% locally on your device</div>
+                <div class="summary-item">📢 Ads served responsibly via Google AdMob &amp; Meta Audience Network mediation</div>
+                <div class="summary-item">📖 Full dual-script coverage (Ol Chiki &amp; Devanagari)</div>
+            </div>
+            <div class="contact-cta">
+                <span>Have a privacy question, suggestion, or query?</span>
+                <a href="#contact">Contact Us Directly &darr;</a>
+            </div>
+        </div>
+        <div class="card" id="introduction">
+            <h2>1. Introduction</h2>
+            <p>Welcome to <strong>Santali Master</strong> ("the App", "we", "us", or "our"), an educational application developed for candidates preparing for the compulsory Tribal/Regional Santali Language Paper (ᱥᱟᱱᱛᱟᱲᱤ / संथाली भाषा, Paper-II) in Jharkhand Government recruitment examinations, including <strong>JSSC CGL, JSSC LDC, JSSC Lady Supervisor, JSSC Excise Constable, JSSC Teacher, and JPSC</strong>.</p>
+            <p>This Privacy Policy explains how our mobile application handles user information. By installing or using Santali Master, you agree to the practices described in this policy.</p>
+        </div>
+        <div class="card" id="no-pii">
+            <h2>2. Information We Do NOT Collect</h2>
+            <p>Unlike many educational platforms, Santali Master <strong>does not require any user registration or account creation</strong>. We do not ask for, collect, store, or transmit any personally identifiable information (PII), including:</p>
+            <ul>
+                <li>Your real name, age, date of birth, or gender</li>
+                <li>Your email address or phone number</li>
+                <li>Your contacts or address book</li>
+                <li>Your precise geographic GPS location</li>
+                <li>Photos, camera, microphone, or external storage files</li>
+                <li>Financial details, credit card, or bank account credentials (the app is completely free to use)</li>
+            </ul>
+        </div>
+        <div class="card" id="local-storage">
+            <h2>3. Information Stored Locally on Your Device</h2>
+            <p>Santali Master uses an <strong>offline-first architecture</strong> powered by Android's local SQLite / Room database and SharedPreferences. The following academic data is saved exclusively on your phone:</p>
+            <ul>
+                <li><strong>Vocabulary Flashcard Mastery:</strong> Status of studied Santali vocabulary words (New, Learning, Mastered) with Ol Chiki script, Devanagari pronunciations, Hindi meanings, and 3-part example sentences using Leitner Spaced Repetition.</li>
+                <li><strong>Quiz &amp; Mock Test Records:</strong> Chapter quiz answers, mock test scores, time spent, and performance history.</li>
+                <li><strong>Daily Study Streak:</strong> Consecutive days the app was opened for revision.</li>
+                <li><strong>App Preferences:</strong> Selected filters, display preferences, and local learning milestones.</li>
+            </ul>
+            <p><em>This data is stored strictly on your local Android device sandbox and is never uploaded, transmitted, or synchronized to any external server.</em></p>
+        </div>
+        <div class="card" id="admob">
+            <h2>4. Third-Party Services &amp; Advertising (Google AdMob &amp; Meta Mediation)</h2>
+            <p>To support ongoing maintenance, vocabulary additions, syllabus updates, and keep this educational resource free for all students, Santali Master integrates <strong>Google Mobile Ads (AdMob)</strong> with <strong>Meta Audience Network (Facebook Ads)</strong> mediation via partner bidding. Third-party SDKs may automatically collect and process certain non-personal device information to display relevant banner, interstitial, and rewarded video ads.</p>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data Category</th>
+                            <th>Description &amp; Purpose</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Google Advertising ID (AAID)</strong></td>
+                            <td>Resettable device identifier used by Google and Meta to deliver, personalize, and cap ad frequency.</td>
+                            <td><span class="badge-ad">Collected by AdMob &amp; Meta SDKs</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Device Information</strong></td>
+                            <td>Device model, manufacturer, Android OS version, and language settings.</td>
+                            <td><span class="badge-ad">Collected by AdMob &amp; Meta SDKs</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Network &amp; Approximate Location</strong></td>
+                            <td>Coarse location derived from IP address (e.g. city/state level, not GPS).</td>
+                            <td><span class="badge-ad">Collected by AdMob &amp; Meta SDKs</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>App Diagnostics</strong></td>
+                            <td>Ad loading performance, mediation bid response time, click events, and diagnostic logs.</td>
+                            <td><span class="badge-ad">Collected by AdMob &amp; Meta SDKs</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Personal Information</strong></td>
+                            <td>Name, email, phone number, contacts, personal documents, files.</td>
+                            <td><span class="badge-none">Never Collected</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>For more details on how Google and Meta handle data across their advertising platforms, please review their official privacy guidelines:</p>
+            <ul>
+                <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+                <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">How Google Uses Information from Apps That Use Their Services</a></li>
+                <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Google AdMob Privacy and Security</a></li>
+                <li><a href="https://www.facebook.com/about/privacy/" target="_blank" rel="noopener">Meta (Facebook) Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="card" id="in-app-updates">
+            <h2>5. Google Play In-App Updates</h2>
+            <p>Santali Master integrates the official <strong>Google Play In-App Update</strong> library to keep your application up-to-date with new exam questions, grammar notes, bug fixes, and performance improvements.</p>
+            <ul>
+                <li>Updates download securely and directly through Google Play Store infrastructure.</li>
+                <li>No personal or device data is collected or transmitted to external servers by this mechanism.</li>
+            </ul>
+        </div>
+        <div class="card" id="permissions">
+            <h2>6. Permissions Used by the App</h2>
+            <p>Santali Master requests only standard, non-sensitive Android permissions:</p>
+            <ul>
+                <li><code>android.permission.INTERNET</code>: Required to load and render Google AdMob and Meta mediated ads and check for Play Store app updates.</li>
+                <li><code>android.permission.ACCESS_NETWORK_STATE</code>: Used to check internet connectivity so the app can gracefully fallback to offline mode when no connection is available.</li>
+                <li><code>com.google.android.gms.permission.AD_ID</code>: Standard Google Play permission required on Android 13+ to provide a privacy-compliant Advertising ID for ad serving and frequency capping.</li>
+            </ul>
+            <p>The App does <em>not</em> request sensitive permissions such as Camera, Microphone, Contacts, Location, SMS, Phone State, or External Storage.</p>
+        </div>
+        <div class="card" id="user-control">
+            <h2>7. User Control &amp; Data Deletion</h2>
+            <p>You have full control over your data:</p>
+            <ul>
+                <li><strong>Clear All Learning Data:</strong> You can completely erase your local database, quiz records, and streak at any time via Android Settings: <strong>Settings &gt; Apps &gt; Santali Master &gt; Storage &gt; Clear Storage / Clear Data</strong>.</li>
+                <li><strong>Reset Advertising ID:</strong> You can reset or delete your Google Advertising ID or opt out of personalized ads at any time via: <strong>Settings &gt; Google &gt; Ads &gt; Reset advertising ID</strong> or <strong>Delete advertising ID</strong>.</li>
+                <li><strong>Uninstalling the App:</strong> Uninstalling the application automatically and permanently deletes all locally stored data from your device.</li>
+            </ul>
+        </div>
+        <div class="card" id="children-privacy">
+            <h2>8. Children's Privacy (COPPA Compliance)</h2>
+            <p>Santali Master is intended for candidates preparing for competitive state recruitment examinations (general audience, 13 years of age and older). We do not knowingly collect personal identifiable information from children under 13.</p>
+        </div>
+        <div class="card" id="security">
+            <h2>9. Data Security</h2>
+            <p>We value your trust. Because Santali Master does not transmit personal information to external servers, your study progress remains safely enclosed in your device's local application sandbox protected by standard Android OS security mechanisms.</p>
+        </div>
+        <div class="card" id="disclaimer">
+            <h2>10. Educational Disclaimer &amp; Fair Use</h2>
+            <p>Santali Master is an independent educational preparatory application designed to help students learn Santali language (Ol Chiki and Devanagari script), grammar, and practice previous year questions for Jharkhand competitive examinations (JSSC/JPSC). The app is not affiliated with or endorsed by the Jharkhand Staff Selection Commission (JSSC), Jharkhand Public Service Commission (JPSC), or any government body. Examination names and references are used solely for educational and descriptive purposes under fair use.</p>
+        </div>
+        <div class="card" id="policy-changes">
+            <h2>11. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect app improvements or regulatory updates. Any changes will be published on this page with an updated "Last Updated" date.</p>
+        </div>
+        <div class="card" id="contact">
+            <h2>12. Contact Information</h2>
+            <p>If you have any questions, suggestions, feedback, or concerns regarding this Privacy Policy or Santali Master, please feel free to reach out to us:</p>
+            <div class="contact-box">
+                <p style="font-size: 17px; font-weight: 700; color: var(--primary-dark);">
+                    Santali Master Developer &amp; Support
+                </p>
+
+                <div class="contact-details-list">
+                    <div><strong>Developer / Publisher:</strong> Zorif</div>
+                    <div><strong>Application:</strong> Santali Master (संथाली मास्टर)</div>
+                    <div><strong>Category:</strong> Education / JSSC &amp; JPSC Exam Preparation</div>
+                    <div><strong>Package:</strong> <code>com.santalimaster.app</code></div>
+                    <div><strong>Official Email:</strong> zorifla@gmail.com</div>
+                    <div><strong>Response Time:</strong> Within 24–48 hours</div>
+                </div>
+
+                <p style="margin-top: 14px;">
+                    <a href="mailto:zorifla@gmail.com?subject=Santali%20Master%20-%20Support%20%26%20Feedback" class="contact-email-btn">
+                        ✉️ zorifla@gmail.com
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 <strong>Santali Master</strong>. All rights reserved. Built for Jharkhand competitive examination aspirants.</p>
+        <p style="margin-top: 4px;">Published by <strong>Zorif</strong> &bull; <a href="#contact" style="color: #555; text-decoration: underline;">Contact Us</a> &bull; <a href="#top" style="color: #555; text-decoration: underline;">Back to Top &uarr;</a></p>
+        <p style="margin-top: 6px; font-size: 12px; color: #888;">This privacy policy is hosted in compliance with Google Play Developer Policy, Google AdMob Policies, and Meta Audience Network Terms.</p>
+    </footer>
+
+    <!-- Script to automatically scroll to & highlight contact information when #contact is called -->
+    <script>
+        function handleAnchorNavigation() {
+            var hash = window.location.hash;
+            if (hash === '#contact' || hash === '#contact-us') {
+                var contactSection = document.getElementById('contact');
+                if (contactSection) {
+                    setTimeout(function() {
+                        contactSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        contactSection.classList.add('contact-highlight');
+                    }, 120);
+                }
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', handleAnchorNavigation);
+        window.addEventListener('load', handleAnchorNavigation);
+        window.addEventListener('hashchange', handleAnchorNavigation);
+    </script>
+</body>
+</html>
